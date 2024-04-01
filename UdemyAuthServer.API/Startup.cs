@@ -101,6 +101,8 @@ namespace UdemyAuthServer.API
 
             app.UseRouting();
 
+            app.UseAuthentication();
+
             app.UseAuthorization();
 
             app.UseEndpoints(endpoints =>
