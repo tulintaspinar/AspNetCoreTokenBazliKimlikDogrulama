@@ -9,11 +9,11 @@ namespace UdemyAuthServer.API.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class UserController : CustomBaseController
+    public class UsersController : CustomBaseController
     {
         private readonly IUserService _userService;
 
-        public UserController(IUserService userService)
+        public UsersController(IUserService userService)
         {
             _userService = userService;
         }
